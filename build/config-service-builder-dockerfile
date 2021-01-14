@@ -4,7 +4,7 @@ FROM maven:3.5-jdk-11
 # copy the project files
 COPY ./pom.xml ./pom.xml
 
-# copy libs
+# copy libs conf-api-7.1.jar由tailf公司提供，从cisco下载，目前只有7.2之后版本，且7.2及之后版本基础版不包含jar包
 ADD ./lib/conf-api-7.1.jar ./lib/com/tailf/conf-api/7.1/
 
 # build all dependencies
